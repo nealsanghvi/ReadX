@@ -1,0 +1,182 @@
+/************************
+HOME
+*************************/
+
+.title {
+  font-family: Aramis;
+  font-size: 120px;
+  margin: 0;
+  text-align: left;
+  padding-left: 50px;
+  color: rgba(0, 0, 0, .8);
+}
+
+h2 {
+  text-align: left;
+  padding-left: 125px;
+  margin-top: -10px;
+  font-family: Aramis;
+  font-size: 40px;
+    color: rgba(0, 0, 0, .8);
+}
+
+.button {
+  text-align: right;
+  padding-right: 350px;
+  margin-top: -37px;
+  color: rgba(250, 250, 250, .9);
+}
+
+.button img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.button img:hover {
+  -webkit-filter: blur(1px);
+}
+
+.fileToUp {
+  position: relative;
+  padding-right: 30px;
+  color: white;
+}
+
+.up {
+    border-radius: 8%;
+    opacity: .9;
+}
+
+.upload-button {
+    border-radius: 8%;
+    color: gba(250, 250, 250, .9);
+    margin: 0;
+    padding-left: -140px;
+}
+
+
+.go {
+text-align:center;
+padding:10px 10px;
+background:rgba(255, 255, 255, 0.9);
+color: black;
+line-height:10px;
+transition: opacity 0.5s;
+-webkit-transition: all ease 0.5s;
+-moz-transition: all ease 0.5s;
+-o-transition: all ease 0.5s;
+-ms-transition: all ease 0.5s ;
+transition: all ease 0.5s ;
+border-radius:4px;
+margin-top: -7px;
+}
+
+.go:hover {
+background: #cccccc;
+color:#000;
+-webkit-transition: all ease 0.7s;
+-moz-transition: all ease 0.7s;
+-o-transition: all ease 0.7s;
+-ms-transition: all ease 0.7s ;
+transition: all ease 0.5s ;
+}
+
+
+.run {
+border-radius: 8%;
+margin-right: 50px;
+margin-top: 0px;
+}
+
+.search {
+    padding-left: 275px;
+    padding-top: 120px;
+}
+
+input[type=text] {
+  width: 350px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: rgba(250, 250, 250, .9);
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 80%;
+  outline: 0;
+}
+
+  form {
+    text-align: right;
+    margin-top: -30px;
+    padding-right: 200px;
+    outline: 0;
+
+}
+
+  .clearfix::after {
+  		content: " ";
+  		display: table;
+  		clear: both;
+    }
+
+    /************************
+    BACKGROUND
+    *************************/
+
+    .background-image {
+    	background-position: center center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    }
+
+    /* Styles for the alternating / transition effect. */
+    .toggle-image {
+     	position: absolute;
+    	width: 100%;
+    	top: 0;
+    	left: 0;
+     	height: 800px;
+    	transition: opacity 1s ease-in-out;
+    }
+
+    /* Styles for the specific images. */
+    .first-image {
+    	background-image: url('../image/back.jpg');
+    	z-index: -3;
+    	opacity: 0;
+    }
+
+    .second-image {
+    	background-image: url('../image/car.jpg');
+    	z-index: -2;
+    	opacity: 0;
+    }
+
+    .third-image {
+    	background-image: url('../image/doct.jpg');
+    	z-index: -1;
+    	opacity: 0;
+    }
+
+    .first-image.show {
+    	opacity: 1;
+    }
+
+    .second-image.show {
+    	opacity: 1;
+    }
+
+    .third-image.show {
+    	opacity: 1;
+    }
